@@ -13,5 +13,12 @@ group :assets do
   gem 'sass-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.3.0'
   gem 'coffee-rails', '~> 4.0.0'
+end
+
+group :assets, :development do
   gem 'ember_script-rails', github: 'ghempton/ember-script-rails'
+end
+
+group :development, :test do
+  gem 'qunit-rails'
 end
