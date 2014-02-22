@@ -1,5 +1,5 @@
 == EmberRails
 
-[![Build Status](https://travis-ci.org/pseudomuto/emberrails.png)](https://travis-ci.org/pseudomuto/emberrails)
+{<img src="https://travis-ci.org/pseudomuto/emberrails.png" alt="Build Status" />}[https://travis-ci.org/pseudomuto/emberrails]
 
 A simple demo application for demonstrating the use of rails, ember, ember-data, ember-script, qunit and travis
