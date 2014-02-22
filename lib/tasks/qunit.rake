@@ -1,6 +1,6 @@
 namespace :qunit do
   desc "run qunit tests with phantomjs"
-  task test: :environment do
+  task :test => :environment do
     unless %x(which phantomjs > /dev/null 2>&1)
       abort "PhantomJS is not installed!"
     end
@@ -36,8 +36,9 @@ namespace :qunit do
       attempts = 0
       begin
         sh(command)
-      rescue
-        sleep 5
+      rescue Exception => ex
+        puts ex.message
+        sleep 2
         attempts += 1
         retry unless attempts == 10
       end
